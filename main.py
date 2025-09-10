@@ -1,7 +1,7 @@
 import asyncio
 import websockets
 
-async def handler(websocket, path):
+async def handler(websocket):
     print(f"Cliente conectado de {websocket.remote_address}")
     try:
         async for message in websocket:
